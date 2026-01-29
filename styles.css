@@ -1,96 +1,194 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+html {
+    font-size: 16px;
+}
+
+body {
     display: flex;
-    background: linear-gradient(90deg, #d878eb, #6f23d3);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container{
-    color: white;
-    background: linear-gradient(90deg, #b411d5, #6f23d3);
-    padding: 2rem;
-    border-radius: 1rem;
-    min-height: 45vh;
-    width: 40vh;
-}
-
-form{
-    margin: 2rem 0 1rem 0;
-}
-
-form select, button, input{
+.container {
+    color: #333;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    min-height: auto;
     width: 100%;
+    max-width: 500px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.container h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.container > p {
+    text-align: center;
+    color: #999;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    margin: 1.5rem 0 0 0;
+}
+
+form select, button, input {
     border: none;
     outline: none;
     border-radius: 0.75rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
 }
 
-form input{
-    border: 1.5px solid rgb(28, 80, 213);
+.amount {
+    margin-bottom: 1.5rem;
+}
+
+.amount p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 0.6rem;
+}
+
+form input {
+    width: 100%;
+    border: 2px solid #e0e0e0;
     font-size: 1rem;
-    height: 3rem;
-    padding-left: 0.5rem;
+    height: 2.8rem;
+    padding: 0 1rem;
+    background: #f8f9fa;
+    color: #333;
 }
 
-form input:hover{
-    border-color: lightblue;
+form input:focus {
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-.dropdown{
+form input:hover {
+    border-color: #ddd;
+}
+
+.dropdown {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.select-container img{
-    max-width: 2rem;
-    padding-right: 10px;
+.from, .to {
+    flex: 1;
 }
 
-.dropdown i{
-    font-size: 1.5rem;
-    margin-top: 1rem;
+.from p, .to p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 0.6rem;
 }
 
-.select-container{
-    background: linear-gradient(90deg, #b411d5, #6f23d3);
+.select-container {
+    background: #f8f9fa;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 6rem;
-    border-radius: 0.5rem;
-    border: 1px solid rgb(97, 91, 91);
+    gap: 0.6rem;
+    padding: 0.6rem;
+    border-radius: 0.75rem;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
 }
 
-.select-container:hover{
-    border-color: rgb(169, 186, 229);
+.select-container:hover {
+    border-color: #667eea;
 }
 
-.select-container select{
-    font-size: 1rem;
+.select-container:focus-within {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.select-container img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+}
+
+.dropdown i {
+    font-size: 1.2rem;
+    color: #667eea;
+    margin-bottom: 0.4rem;
+    animation: pulse 2s infinite;
+}
+
+.select-container select {
+    font-size: 0.95rem;
     width: auto;
     cursor: pointer;
+    background: transparent;
+    color: #333;
+    border: none;
 }
 
-.msg{
-    margin: 2rem 0 2rem 0;
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
 }
 
-form button{
-    height: 3rem;
-    background-color: #f900bf;
+.msg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 1.2rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
     color: white;
-    font-size: 1.15rem;
-    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-form button:hover{
-    background-color: #ef12bc;
+form button {
+    width: 100%;
+    height: 3rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+form button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.4);
 }
