@@ -52,5 +52,7 @@ USD, EUR, GBP, JPY, INR, NPR, AUD, CAD, CNY, and 80+ more!
 
 ---
 
-**Ready to use!** Just open the HTML file and start converting. 💱✨
+## 👨‍💻 Author
+[Diwas Bk](https://github.com/diwasbk)
 
+**Ready to use!** Just open the HTML file and start converting. 💱✨
