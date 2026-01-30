@@ -51,6 +51,8 @@ USD, EUR, GBP, JPY, INR, NPR, AUD, CAD, CNY, and 80+ more!
 [exchangerate-api.com](https://exchangerate-api.com) - Free real-time exchange rates
 
 ---
+ ## Screenshot
+ <img width="1260" height="1199" alt="image" src="https://github.com/user-attachments/assets/f87b7ac9-6d02-478c-a8bf-2c8b47eb965e" />
 
 ## 👨‍💻 Author
 [Diwas Bk](https://github.com/diwasbk)
